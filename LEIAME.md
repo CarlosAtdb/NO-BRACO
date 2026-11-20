@@ -1,17 +1,11 @@
-# No Braço — site do app
+# No Braço
 
-Estes arquivos formam o app inteiro. Para publicar no GitHub Pages,
-envie **todos eles juntos**, soltos na raiz do repositório — não dentro
-de uma pasta.
+App de teoria, cifras e treino de violão e guitarra — PWA offline.
 
-- index.html .............. o app
-- manifest.webmanifest .... nome e ícones do app instalado
-- sw.js ................... faz funcionar offline
-- icon-192.png / icon-512.png / icon-512-maskable.png
+**Acesse:** https://carlosatdb.github.io/NO-BRACO/
 
-Depois de publicado, abra o endereço no celular e use
-"Adicionar à Tela de Início".
+- Abre offline depois da primeira visita (service worker).
+- Instalável no celular: no iPhone (Safari) "Adicionar à Tela de Início"; no Android (Chrome) "Instalar app".
+- Tudo embutido no `index.html`: fontes, dados (923 músicas + links diretos), Caderno de técnica, escalas, afinador.
 
-## Ao receber uma versão nova
-Substitua o `index.html` e o `sw.js`. A versão do cache dentro do
-`sw.js` precisa mudar a cada atualização — eu já entrego assim.
+Arquivo único gerado a partir do projeto-fonte modular. Para atualizar: substitua o `index.html` e suba o número do cache no `sw.js`.
